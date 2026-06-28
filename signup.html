@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | Shopping Dukan</title>
+
+    <link rel="stylesheet" href="styles/main.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html">Shopping Dukan</a>
+        </div>
+
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+            <a href="index.html#products">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="login.html">Login</a>
+
+        </nav>
+
+    </header>
+
+    <!-- Signup Form -->
+
+    <section class="auth-section">
+
+        <div class="auth-container">
+
+            <h2>Create Account</h2>
+
+            <form id="signupForm">
+
+                <div class="input-group">
+
+                    <label>Full Name</label>
+
+                    <input type="text"
+                           id="fullName"
+                           placeholder="Enter your full name"
+                           required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Email</label>
+
+                    <input type="email"
+                           id="signupEmail"
+                           placeholder="Enter your email"
+                           required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <div class="password-box">
+
+                        <input type="password"
+                               id="signupPassword"
+                               placeholder="Create a password"
+                               required>
+
+                        <i class="fa-solid fa-eye togglePassword"
+                           onclick="togglePassword('signupPassword',this)"></i>
+
+                    </div>
+
+                    <small id="strengthMessage"></small>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Confirm Password</label>
+
+                    <div class="password-box">
+
+                        <input type="password"
+                               id="confirmPassword"
+                               placeholder="Confirm your password"
+                               required>
+
+                        <i class="fa-solid fa-eye togglePassword"
+                           onclick="togglePassword('confirmPassword',this)"></i>
+
+                    </div>
+
+                </div>
+
+                <button type="submit" class="auth-btn">
+                    Sign Up
+                </button>
+
+                <p class="switch-form">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Login
+                    </a>
+
+                </p>
+
+                <p id="signupMessage"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script type="module" src="scripts/signup.min.js" defer></script>
+
+</body>
+
+</html>
