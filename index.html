@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping_Dukan</title>
+
+    <link rel="preload" href="styles/main.min.css" as="style">
+    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>Shopping Dukan</span>
+        </div>
+
+        <nav class="navbar">
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="#products">Products</a></li>
+
+                <li><a href="#">About</a></li>
+
+                <li><a href="#">Contact</a></li>
+
+                <li><a href="cart.html">Cart</a></li>
+
+                <li><a href="login.html">Login</a></li>
+
+                <li><a href="#" id="logout">Logout</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-right">
+
+            <div class="search-box">
+
+                <input type="text" placeholder="Search products...">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+
+            <div class="cart">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span class="cart-count">0</span>
+
+            </div>
+
+            <div class="hamburger">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Biggest Sale of the Year!</h1>
+
+            <p>
+                Discover premium fashion, electronics and accessories with
+                discounts up to <strong>80% OFF</strong>.
+            </p>
+
+            <a href="#products" class="hero-btn">
+                Shop Now
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+
+        <div class="section-title">
+
+            <h2>Featured Products</h2>
+
+            <p>Discover our latest collection.</p>
+
+        </div>
+
+        <div id="product-grid"> </div>
+
+    </section>
+
+   
+    <script type="module" src="scripts/app.min.js" defer></script>
+
+</body>
+
+</html>
